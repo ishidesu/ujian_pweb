@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@keyframes atas{
+    from{
+        margin-top: -20px;
+        opacity: 0;
+    }
+    to{
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+*{
+    font-family: "Poppins", "Sans-serif";
+}
+/* @media (max-width: 767px) and (max-width: 952px){
+    body{
+        background-position-x: 0px;
+    }
+    div.blur{
+        position: center;
+        float: none;
+        width: 100%;
+    }
+    .logo{
+        position: center;
+        float: none;
+    }
+} */
+body{
+    background-image: url(../image/Aurhel\ Alana_landscape_.jpg);
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-position-x: calc(120% - -525px);
+    /* background-position-x: 525px; */
+    overflow-y: hidden;
+}
+div.container{
+    position: fixed;
+}
+div.blur{
+    /* float: left; */
+    /* padding-bottom: 20.7%; */
+    width: 60%;
+    height: 98vh;
+    /*width: 1000px;
+    height: 855px;*/
+    background-color: rgb(243, 249, 255);
+}
+
+/* -- Bagian Isi Program --*/
+.logo{
+    animation: atas 1s;
+    /* float: right; */
+    margin-right: 15%;
+    /* margin-right: 250px; */
+}
+fieldset{
+    animation: atas 1s;
+    width: 30%;
+    height: auto;
+    text-align: center;
+}
+.login{
+    margin-top: 50px;
+}
+h1{
+    color: aliceblue;
+    background-color: red;
+}
+input{
+    border-radius: 6px;
+}
+input:hover{
+    background-color: rgb(167, 186, 255);
+    transition: all 0.2s ease;
+}
+
+button.next{
+    border-radius: 6px;
+}
+
+.error{
+    text-align: left;
+    background: #F2DEDE;
+    color: #A94442;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+}
+
+.success{
+    text-align: left;
+    background: #D4EDDA;
+    color: #40754C;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+}

@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@keyframes atas{
+    from{
+        margin-top: -20px;
+        opacity: 0;
+    }
+    to{
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes fade-left{
+    from{
+        opacity: 0;
+        transform: translateY(5%);
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes change{
+    0%{
+        color: rgba(252, 84, 94);
+    }
+    25%{
+        color: rgba(162, 90, 175);
+    }
+    50%{
+        color: rgba(82, 95, 245);
+    }
+    75%{
+        color: rgba(162, 90, 175);
+    }
+    100%{
+        color: rgba(252, 84, 94);
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", "Sans-serif";
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* -- Navbar --*/
+div.navbar{
+    margin-top: -5px;
+    position: relative;
+}
+div.navbar::after{
+    content: '';
+    position: absolute;
+    background: aqua;
+    height: 10px;
+    width: 100%;
+    bottom: -70px;
+    left: 0;
+}
+div.header{
+    height: 5px;
+    animation: atas 1s;
+}
+div.logo{
+    float: left;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.user{
+    text-decoration: none;
+    color: black;
+    margin-right: 50px;
+}
+div.navbar p{
+    float: right;
+    margin-top: 10px;
+    margin-right: 5px;
+    color: red;
+}
+a{
+    text-decoration: none;
+}
+h1.logo2{
+    color: aliceblue;
+    background-color: red;
+}
+header{
+    display: flex;
+    align-items: center;
+    padding: 20px 0 0 35.2%; 
+}
+div.navbar li{
+    position: relative;
+    display: inline-block;
+    margin-top: 1.5%;
+    margin-right: 5px;
+    border-radius: 6px;
+    align-items: center;
+    transition: .2s;
+}
+div.section-part{
+    position: fixed;
+    margin-left: -240px;
+}
+
+header.sticky{
+    transition: .5s;
+}
+header.sticky li{
+    background-color: tomato;
+}
+header.sticky a{
+    color: white;
+    transition: .5s;
+}
+.section-part a{
+    color: black;
+    font-size: 20px;
+    margin: 0 10px 0 10px;
+    transition: .2s;
+}
+
+/* -- news --*/
+div.news{
+    /* animation: fade 1s; */
+    border: 2px solid rgb(179,107,255);
+    border-radius: 6px;
+    /* margin-top: 100px;
+    margin-left: -110px;
+    float: left;
+    display: block;
+    width: 15%;
+    height: 700px; */
+}
+div.news::after{
+    content: '';
+    position: absolute;
+    background: linear-gradient(to top, rgb(255, 83, 91),rgb(70, 95, 255) );
+    border: 2px solid rgb(255, 133, 45);
+    height: 700px;
+    width: 0.5%;
+    left: 16.7%;
+    top: 95px;
+    border-radius: 6px;
+}
+div.news2{
+    text-align: center;
+    margin-top: 10%;
+}
+div.news li{
+    list-style: none;
+    margin-top: 40px;
+    width: 90%;
+}
+div.news button::after{
+    content: '';
+    position: absolute;
+    background: tomato;
+    height: 2px;
+    width: 0%;
+    left: 50px;
+    margin-top: 20px;
+}
+div.news button:hover::after{
+    width: 11%;
+    transition: 0.2s;
+}
+div.new button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+div.new button:active{
+    color: tomato;
+}
+div.new button.more::after{
+    display: none;
+}
+div.new button.more:hover{
+    animation: change 3s ease-in-out infinite;
+}
+div.new iframe{
+    margin-top: 25%;
+    width: 95%;
+    border-radius: 6px;
+}
+
+/* -- Pendaftaran -- */
+div.bag-kiri{
+    animation: fade 1s;
+    margin-top: 76px;
+    margin-left: -380px;
+    float: left;
+    display: block;
+    width: 15%;
+}
+div.daftar{
+    /* animation: fade 1s; */
+    margin-top: 20px;
+    border: 2px solid rgb(179,107,255);
+    border-radius: 6px;
+    /* float: left; */
+    /* animation: fade 1s;
+    border: 2px solid rgb(179,107,255);
+    border-radius: 6px;
+    margin-top: 825px;
+    margin-left: -15.2%;
+    float: left;
+    width: 15%;*/
+    /* height: 120px; */
+}
+div.daftarin2{
+    text-align: center;
+    margin-top: 10%;
+}
+div.daftarin button::after{
+    content: '';
+    position: absolute;
+    background: tomato;
+    height: 2px;
+    width: 0%;
+    left: 50px;
+    margin-top: 20px;
+}
+div.daftarin button:hover::after{
+    width: 11%;
+    transition: 0.2s;
+}
+div.daftar button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10%;
+}
+div.daftar button:active{
+    color: tomato;
+}
+
+/* -- Member --*/
+#member-list{
+    height: 1100px;
+    background-color: bisque;
+}
+div.member{
+    animation: fade 1s;
+}
+div.allmember{
+    margin-top: 30px;
+    float: right;
+    width: 81.5%;
+    padding-right: 0.5%
+}
+div.membert1-text{
+    background: linear-gradient(to right, rgb(255, 83, 91),rgb(70, 95, 255) );
+}
+div.membert1-text h1{
+    color: rgb(41, 41, 41);
+}
+div.membert2-text{
+    background: linear-gradient(to right, rgb(255, 83, 91),rgb(70, 95, 255) );
+}
+div.membert2-text h1{
+    color: rgb(41, 41, 41);
+}
+
+/* -- Member Styling -- */
+div.memberinti{
+    display: flex;
+    flex-direction: column;
+}
+div.membert2{
+    display: flex;
+    flex-direction: column;
+}
+div.allmember p{
+    float: right;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+/* -- Member Bagian Atas -- */
+div.memberinti a.feni, a.gracie{
+    border: 1px solid rgb(255, 181, 184);
+    border-radius: 6px;
+    margin-top: 1%;
+}
+div.memberinti a.feni img, a.gracie img, a.christy img, a.ella img{
+    margin-top: 5px;
+}
+div.memberinti a.feni img, a.gracie img{
+    width: 125px;
+    height: 176px;
+    margin-left: 10px;
+}
+div.memberinti a.feni p, a.gracie p{
+    background-color: rgb(117, 191, 255);
+    font-size: 13px;
+    padding-right: 0;
+    margin-top: 160px;
+    margin-left: -120px;
+}
+/* -- Member Bagian Bawah -- */
+div.memberinti a.christy, a.ella{
+    border: 1px solid rgb(255, 181, 184);
+    border-radius: 6px;
+    margin-top: 20px;
+}
+div.memberinti a.christy{
+    margin-bottom: 1%;
+}
+div.memberinti a.christy img, a.ella img{
+    width: 125px;
+    height: 176px;
+    margin-left: 10px;
+}
+div.memberinti a.christy p, a.ella p{
+    background-color: rgb(117, 191, 255);
+    font-size: 13px;
+    padding-right: 0;
+    margin-top: 160px;
+    margin-left: -120px;
+}
+
+#video{
+    background-color: aquamarine;
+    height: 100vh;
+}
+.atas-video h1{
+    padding-top: 5%;
+}
+/* .video{
+    display: inline-flex;
+} */
+/* .button-video{
+    display: flex;
+} */
+.button-video ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.button-video li{
+    list-style: none;
+    margin: 0 10px 0 10px;
+}
+.button-video button{
+    font-size: 100px;
+    margin-top: -100px;
+    width: 0px;
+    height: 0px;
+    background: none;
+    border: none;
+    margin-right: 20px;
+    cursor: pointer;
+}
+#video iframe{
+    animation: fade-left .5s;
+    width: 800px;
+    height: 500px;
+}
+/* -- 48group -- */
+#gruplain{
+    height: 100vh;
+    background: linear-gradient(to right, black, white);
+}
+.grup48 h1{
+    padding-top: 5%;
+}
+.grup48 img{
+    margin-top: 30px;
+}

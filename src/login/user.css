@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@keyframes atas{
+    from{
+        margin-top: -20px;
+        opacity: 0;
+    }
+    to{
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes fade-left{
+    from{
+        opacity: 0;
+        transform: translateY(5%);
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes change{
+    0%{
+        color: rgba(252, 84, 94);
+    }
+    25%{
+        color: rgba(162, 90, 175);
+    }
+    50%{
+        color: rgba(82, 95, 245);
+    }
+    75%{
+        color: rgba(162, 90, 175);
+    }
+    100%{
+        color: rgba(252, 84, 94);
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", "Sans-serif";
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* -- Navbar --*/
+div.navbar{
+    margin-top: -5px;
+    position: relative;
+}
+div.navbar::after{
+    content: '';
+    position: absolute;
+    background: aqua;
+    height: 10px;
+    width: 100%;
+    bottom: -70px;
+    left: 0;
+}
+div.header{
+    height: 5px;
+    animation: atas 1s;
+}
+div.logo{
+    float: left;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.user{
+    text-decoration: none;
+    color: black;
+    margin-right: 50px;
+}
+div.navbar p{
+    float: right;
+    margin-top: 30px;
+    margin-right: 5px;
+    color: red;
+}
+a{
+    text-decoration: none;
+}
+h1.logo2{
+    color: aliceblue;
+    background-color: red;
+}
+
+/* -- news --*/
+div.bag-kiri{
+    animation: fade 1s;
+    margin-top: 95px;
+    margin-left: -110px;
+    float: left;
+    display: block;
+    width: 15%;
+}
+div.news{
+    /* animation: fade 1s; */
+    border: 2px solid rgb(179,107,255);
+    border-radius: 6px;
+    /* margin-top: 100px;
+    margin-left: -110px;
+    float: left;
+    display: block;
+    width: 15%;
+    height: 700px; */
+}
+div.news::after{
+    content: '';
+    position: absolute;
+    background: linear-gradient(to top, rgb(255, 83, 91),rgb(70, 95, 255) );
+    border: 2px solid rgb(255, 133, 45);
+    height: 700px;
+    width: 0.5%;
+    left: 16.7%;
+    top: 95px;
+    border-radius: 6px;
+}
+div.news2{
+    text-align: center;
+    margin-top: 10%;
+}
+div.news li{
+    list-style: none;
+    margin-top: 40px;
+    width: 90%;
+}
+div.news button::after{
+    content: '';
+    position: absolute;
+    background: tomato;
+    height: 2px;
+    width: 0%;
+    left: 50px;
+    margin-top: 20px;
+}
+div.news button:hover::after{
+    width: 11%;
+    transition: 0.2s;
+}
+div.new button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+div.new button:active{
+    color: tomato;
+}
+div.new button.more::after{
+    display: none;
+}
+div.new button.more:hover{
+    animation: change 3s ease-in-out infinite;
+}
+div.new iframe{
+    margin-top: 25%;
+    width: 95%;
+    border-radius: 6px;
+}
+
+/* -- User Profile -- */
+div.uProfile{
+    width: 81.5%;
+    float: right;
+    margin: 50px 0 0 0;
+}
+
+a.edit{
+    color: #0080ff;
+}
+
+a.delete{
+    color: red;
+}
